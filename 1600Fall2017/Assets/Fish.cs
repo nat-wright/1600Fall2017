@@ -6,8 +6,11 @@ public class Fish : Animal {
 
     void Swim () {
         print(this.name + " Swims");
+        }
 
-    void start()
-    {
-        Swim ();
+   public override void Start() {
+        base.Start();
+        Swim();
+    }
+
 }
