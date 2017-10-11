@@ -12,4 +12,8 @@ public class enemy : MonoBehaviour {
 	void Update () {
 		agent.destination = player.position;
 	}
+
+	public void Stun (float _speed) {
+		agent.speed = _speed;
+	}
 }
